@@ -1,0 +1,125 @@
+body {
+  font-family: Muli, sans-serif;
+}
+
+/*.main > section {
+
+  &:nth-child(even) {
+    background-color: #E5E5E5;
+  }
+}*/
+
+.wrapper {
+  margin: auto;
+  max-width: 1146px;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-light {
+  color: #56CCF2;
+}
+
+.text-dark {
+  color: #253757;
+}
+
+.text-16 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.text-24 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.text-32 {
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 900;
+}
+
+.text-48 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.active {
+  position: relative;
+  padding: 0 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #FCC304;
+    border-radius: 2px;
+    bottom: 0;
+  }
+}
+
+h5 {
+
+  position: relative;
+  margin-left: 37px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+
+
+  &::before {
+    content: '';
+    background-image: url("../src/images/dots-blue.svg");
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    left: -37px;
+
+  }
+}
+
+h4 {
+
+  position: relative;
+  margin-left: 37px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+
+
+  &::before {
+    content: '';
+    background-image: url("../src/images/dots-white.svg");
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    left: -37px;
+
+  }
+}
+
+.blue {
+  color: $blue;
+  background-color: rgba(86, 204, 242, 0.1);
+}
+
+.orange {
+  color: $orange;
+  background-color: rgba(252, 195, 4, 0.1);
+}
+
+.green {
+  color: $green;
+  background-color: rgba(3, 213, 66, 0.1);
+}
+
+.red {
+  color: $red;
+  background-color: rgba(242, 86, 86, 0.1);
+}
+
