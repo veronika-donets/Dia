@@ -27,7 +27,7 @@
 
   a {
     font-weight: bold;
-    line-height: 32px;
+    line-height: 40px;
   }
 
   &__logo {
@@ -56,6 +56,7 @@
   }
 
   &__heading {
+
     margin: 85px 0 0;
     font-size: 64px;
     font-weight: 900;
@@ -79,5 +80,13 @@
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
+
+
+    &:hover {
+      background-color: $dark-blue;
+      color: white;
+      transition: background-color 1s, color 1s;
+
+    }
   }
 }

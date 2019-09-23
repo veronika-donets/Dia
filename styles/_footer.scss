@@ -1,0 +1,103 @@
+.footer {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form {
+
+  width: 656px;
+  display: block;
+
+  &__footer {
+    box-sizing: border-box;
+    max-width: 656px;
+    margin: 105px 0;
+  }
+
+  &__input {
+
+    display: block;
+    width: 100%;
+    line-height: 46px;
+    margin: 48px 0;
+    font-size: 14.4px;
+    font-weight: bold;
+    background: none;
+    border-width: 0;
+    border-bottom: 1px solid #E1E1E1;
+
+    &::placeholder {
+      color: #E1E1E1;
+    }
+  }
+
+  &__button {
+    margin: 55px 0;
+  }
+}
+
+.contacts {
+
+  width: 370px;
+
+  &__heading {
+
+    margin: 19px 0 43px;
+  }
+
+  &__text_small {
+
+    display: block;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 41px;
+  }
+
+  &__text_large {
+
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__items {
+
+    margin: 53px 0;
+    width: 192px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.footer {
+
+  &__menu {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 83px auto;
+  }
+
+  &__list {
+
+    min-width: 480px;
+    max-width: 558px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+}

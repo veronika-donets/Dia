@@ -19,11 +19,11 @@ body {
 }
 
 .text-light {
-  color: #56CCF2;
+  color: $blue;
 }
 
 .text-dark {
-  color: #253757;
+  color: $dark-blue;
 }
 
 .text-16 {
@@ -34,10 +34,17 @@ body {
 .text-24 {
   font-size: 24px;
   line-height: 1.5;
+  font-weight: 900;
 }
 
 .text-32 {
   font-size: 32px;
+  line-height: 1.4;
+  font-weight: 900;
+}
+
+.text-36 {
+  font-size: 36px;
   line-height: 1.4;
   font-weight: 900;
 }

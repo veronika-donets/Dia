@@ -37,6 +37,11 @@
         box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
         background-color: white;
 
+        &:hover {
+          transform: scale(1.2);
+          transition: transform 1s;
+        }
+
         &:nth-child(odd) {
           top: 128px;
         }

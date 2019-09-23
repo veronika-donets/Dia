@@ -1,0 +1,142 @@
+.testimonials {
+
+  padding-top: 165px;
+
+  &__heading {
+    margin: 19px 0 86px;
+    width: 362px;
+  }
+
+  &__block {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+
+    box-sizing: border-box;
+    position: relative;
+    padding: 38px 32px;
+    text-align: center;
+    width: 314px;
+    height: 464px;
+    box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
+
+    &:hover {
+      transform: scale(1.2);
+      transition: transform 1s;
+    }
+
+    &:nth-child(1) .testimonials__position {
+      color: $blue;
+    }
+
+    &:nth-child(2) .testimonials__position {
+      color: $orange;
+    }
+
+    &:nth-child(3) .testimonials__position {
+      color: $red;
+    }
+
+    &:nth-child(1) .testimonials__line {
+      background-color: $blue;
+    }
+
+    &:nth-child(2) .testimonials__line {
+      background-color: $orange;
+    }
+
+    &:nth-child(3) .testimonials__line {
+      background-color: $red;
+    }
+
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 160px;
+      width: 64px;
+      top: 40px;
+      left: calc(50% - 32px);
+      transform: rotate(25deg);
+      border-radius: 32px;
+    }
+
+    &:nth-child(1) {
+
+      &::before {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56CCF2;
+      }
+    }
+
+    &:nth-child(2) {
+
+      &::before {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #FCC304;
+      }
+    }
+
+    &:nth-child(3) {
+
+      &::before {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #F25656;
+      }
+    }
+  }
+
+  &__img_heading {
+
+    width: 64px;
+    height: 125px;
+    margin: 50px auto 16px;
+    overflow: hidden;
+    border-radius: 32px;
+    transform: rotate(-20deg);
+  }
+
+  &__img {
+
+    width: 64px;
+    height: 125px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transform: rotate(20deg) scale(1.29);
+  }
+
+  &__text {
+
+    font-style: italic;
+    font-size: 14.4px;
+    line-height: 150%;
+    display: block;
+    width: 250px;
+    margin: 5px auto;
+  }
+
+  &__name {
+    display: block;
+    line-height: 150%;
+  }
+
+  &__line {
+
+    width: 64px;
+    height: 2px;
+    border-radius: 1px;
+    margin: 31px auto;
+  }
+
+  &__position {
+    display: block;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 150%;
+    letter-spacing: 2px;
+  }
+}
+

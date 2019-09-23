@@ -1,0 +1,130 @@
+@media screen and (max-width: 1199px) {
+
+  .what-we-do {
+
+    position: relative;
+    top: 250px;
+
+    &__blocks {
+
+      margin: auto;
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 749px) {
+
+  h5 {
+    display: block;
+    width: max-content;
+    margin: auto;
+  }
+
+  .menu {
+
+    flex-direction: column;
+    align-items: center;
+
+    &__list {
+
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__hire {
+      margin: 0;
+    }
+  }
+
+  .global {
+
+    position: absolute;
+    top: 300px;
+    color: $dark-blue;
+    z-index: 1;
+    margin: auto;
+
+    &__section {
+
+      text-align: center;
+    }
+
+    &__button {
+
+      margin: auto;
+      background-color: $blue;
+    }
+  }
+
+  .intro {
+
+    position: absolute;
+    top: 1120px;
+
+    &__links {
+
+      transform: rotate(0) translate(0);
+      position: relative;
+      top: 40px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      /*bottom: 20px;*/
+    }
+
+  }
+
+  .welcome {
+
+    position: relative;
+    top: 250px;
+  }
+
+  .what-we-do {
+
+    position: relative;
+    top: 250px;
+
+    &__blocks {
+
+      flex-direction: column;
+      margin: auto;
+      padding: 0;
+    }
+
+    &__item {
+      margin: auto;
+    }
+
+    &__img {
+      margin: 20px auto;
+    }
+  }
+
+  .process {
+
+    position: relative;
+    top: 250px;
+    flex-direction: column;
+
+    div {
+      margin: auto;
+    }
+
+    &__block_right {
+      position: relative;
+      /*top: 250px;*/
+      flex-direction: column;
+
+
+      &_item:nth-child(odd) {
+          top: 0;
+          margin: 20px auto;
+
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,152 @@
+.vision {
+  position: relative;
+
+  &__wrapper {
+
+    max-width: 754px;
+    text-align: center;
+    margin: 160px auto 256px;
+  }
+
+  &__heading {
+
+    margin: 0 auto 57px;
+  }
+
+  &__text {
+    margin: 55px 0;
+  }
+
+  &__button {
+
+    width: 226px;
+    height: 56px;
+    background-color: #2F80ED;
+    border-radius: 64px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-width: 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $dark-blue;
+      color: white;
+      transition: background-color 1s, color 1s;
+
+    }
+  }
+
+  &__pieses {
+    position: relative;
+  }
+
+  &__item {
+
+    box-sizing: border-box;
+    height: 60px;
+    width: 153px;
+    border-radius: 30px;
+    opacity: 0.5;
+    position: absolute;
+    transform: rotate(-65deg);
+
+
+    &:nth-child(1) {
+      border: $red solid 5px;
+      top: -70px;
+      left: 200px;
+      width: 85px;
+      height: 33px;
+    }
+
+    &:nth-child(2) {
+      border: $orange solid 5px;
+      top: -100px;
+      left: 400px;
+      width: 45px;
+      height: 17px;
+    }
+
+    &:nth-child(3) {
+      border: $green solid 5px;
+      top: 155px;
+      left: 250px;
+      width: 143px;
+      height: 56px;
+    }
+
+    &:nth-child(4) {
+      border: $blue solid 5px;
+      top: 180px;
+      left: 80px;
+      width: 67px;
+      height: 26px;
+    }
+
+    &:nth-child(5) {
+      border: $orange solid 5px;
+      top: 280px;
+      left: 430px;
+      width: 46px;
+      height: 18px;
+    }
+
+    &:nth-child(6) {
+      border: $purple solid 5px;
+      top: 320px;
+      left: 131px;
+      width: 93px;
+      height: 36px;
+    }
+
+    &:nth-child(7) {
+      border: $purple solid 5px;
+      top: -100px;
+      right: 100px;
+      width: 53px;
+      height: 22px;
+    }
+
+    &:nth-child(8) {
+      border: $green solid 5px;
+      top: -50px;
+      right: 230px;
+      width: 143px;
+      height: 56px;
+    }
+
+    &:nth-child(9) {
+      border: $orange solid 5px;
+      top: 60px;
+      right: 50px;
+      width: 85px;
+      height: 33px;
+    }
+
+    &:nth-child(10) {
+      border: $blue solid 5px;
+      top: 230px;
+      right: 130px;
+      width: 153px;
+      height: 60px;
+    }
+
+    &:nth-child(11) {
+      border: $red solid 5px;
+      top: 170px;
+      right: 285px;
+      width: 85px;
+      height: 33px;
+    }
+
+    &:nth-child(12) {
+      border: $purple solid 5px;
+      top: 300px;
+      right: 450px;
+      width: 53px;
+      height: 22px;
+    }
+  }
+}
+
+
