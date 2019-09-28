@@ -5,6 +5,10 @@
   justify-content: space-between;
 }
 
+.footer li {
+  line-height: 40px;
+}
+
 .form {
 
   width: 656px;
@@ -26,10 +30,10 @@
     font-weight: bold;
     background: none;
     border-width: 0;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid #919191;
 
     &::placeholder {
-      color: #E1E1E1;
+      color: $dark-blue;
     }
   }
 
@@ -89,7 +93,7 @@
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    margin: 83px auto;
+    margin: 53px auto;
   }
 
   &__list {
@@ -98,6 +102,9 @@
     max-width: 558px;
     display: flex;
     justify-content: space-between;
+  }
 
+  &__email {
+    line-height: 50px;
   }
 }

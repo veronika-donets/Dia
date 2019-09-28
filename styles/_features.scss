@@ -5,7 +5,8 @@
   display: block;
   background-color: $blue;
   margin-top: -180px;
-  z-index: -1;
+  z-index: 0;
+  overflow: hidden;
 
   &__background {
 

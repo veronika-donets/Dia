@@ -11,10 +11,14 @@
   &__heading {
 
     margin: 0 auto 57px;
+    position: relative;
+    z-index: 2;
   }
 
   &__text {
     margin: 55px 0;
+    position: relative;
+    z-index: 2;
   }
 
   &__button {
@@ -49,6 +53,7 @@
     opacity: 0.5;
     position: absolute;
     transform: rotate(-65deg);
+    z-index: 0;
 
 
     &:nth-child(1) {
