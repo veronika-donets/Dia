@@ -31,6 +31,8 @@
     font-weight: bold;
     border-width: 0;
     cursor: pointer;
+    position: relative;
+    z-index: 3;
 
     &:hover {
       background-color: $dark-blue;

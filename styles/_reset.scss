@@ -124,13 +124,16 @@ html {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
-a:focus {
-  outline: thin dotted;
+*:focus {
+  outline: thin dotted #919191;
 }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+button:active {
+  outline: thin dotted #919191;
+}
 
 a:active,
 a:hover {

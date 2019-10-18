@@ -89,6 +89,7 @@
 
   &__menu {
 
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -106,5 +107,25 @@
 
   &__email {
     line-height: 50px;
+  }
+
+  &__item {
+
+    position: relative;
+    padding: 0 5px;
+    line-height: 40px;
+    display: inline-block;
+
+    &:hover::after {
+
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: #FCC304;
+      border-radius: 2px;
+      bottom: 0;
+    }
   }
 }

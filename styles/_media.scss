@@ -76,6 +76,15 @@
     max-width: 90vh;
     text-align: center;
   }
+
+  .intro {
+    &__section {
+      left: 180px;
+      right: 180px;
+      //max-width: max-content;
+      margin: auto;
+    }
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -119,7 +128,7 @@
     &__button {
 
       margin: auto;
-      background-color: $blue;
+      background-color: $orange;
     }
   }
 
@@ -141,6 +150,24 @@
   .intro {
     position: relative;
     top: 200px;
+
+    &__button_lr {
+      position: relative;
+      left: 0;
+      right: 0;
+      top: -32px;
+      bottom:0;
+      margin: 0 auto;
+    }
+
+
+    &__section {
+      left: 180px;
+      right: 180px;
+      max-width: max-content;
+      margin: auto;
+    }
+
   }
 
   .welcome {
