@@ -124,15 +124,22 @@ html {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
-*:focus {
-  outline: thin dotted #919191;
+a:focus {
+  outline: 0;
+  //box-shadow: 5px 5px 10px rgba(37, 55, 87, 0.2);
+  //text-shadow: 0px 0px 20px rgba(252, 195, 4, 0.8);
+  color: #FCC304;
+}
+
+button:focus {
+  box-shadow: 0px 0px 30px rgba(37, 55, 87, 0.8);
 }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 button:active {
-  outline: thin dotted #919191;
+  outline: 0;
 }
 
 a:active,

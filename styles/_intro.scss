@@ -27,6 +27,18 @@
     font-size: 13px;
     font-weight: 800;
     cursor: pointer;
+    position: relative;
+    display: inline-block;
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: $dark-blue;
+      bottom: -10px;
+    }
   }
 
   &__area {

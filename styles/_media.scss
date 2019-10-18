@@ -34,6 +34,11 @@
     margin: auto;
   }
 
+  .global {
+    color: $dark-blue;
+    z-index: 3;
+  }
+
   .process {
     flex-direction: column;
 
@@ -51,6 +56,10 @@
 
       flex-direction: column;
       justify-content: center;
+    }
+
+    &__item {
+      margin: auto;
     }
   }
 
@@ -114,7 +123,6 @@
 
     position: absolute;
     top: 300px;
-    color: $dark-blue;
     z-index: 1;
     left: 0;
     right: 0;
@@ -156,10 +164,9 @@
       left: 0;
       right: 0;
       top: -32px;
-      bottom:0;
+      bottom: 0;
       margin: 0 auto;
     }
-
 
     &__section {
       left: 180px;
@@ -167,7 +174,6 @@
       max-width: max-content;
       margin: auto;
     }
-
   }
 
   .welcome {
@@ -196,8 +202,12 @@
 
   .process {
 
-    div {
-      margin: auto;
+    div:not(.process__text-heading) {
+      margin: 10px auto;
+    }
+
+    &__text-heading {
+      margin: 20px 0 20px;
     }
 
     &__block_right {
@@ -205,8 +215,8 @@
       flex-direction: column;
 
       &_item:nth-child(odd) {
-          top: 0;
-          margin: 20px auto;
+        top: 0;
+        margin: 20px auto;
 
       }
     }
@@ -215,5 +225,21 @@
   .footer__email {
     order: 1;
   }
+
+  .what-we-do {
+
+    &__heading {
+      margin-bottom: 50px;
+    }
+
+    &__item {
+      margin-bottom: 50px;
+    }
+  }
+
+  .process {
+    padding-top: 50px;
+  }
+
 }
 

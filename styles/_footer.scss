@@ -35,6 +35,10 @@
     &::placeholder {
       color: $dark-blue;
     }
+
+    &:focus {
+      border-bottom: 1px solid $orange;
+    }
   }
 
   &__button {
@@ -76,12 +80,18 @@
     width: 192px;
     display: flex;
     justify-content: space-between;
+
+    a:focus {
+      box-shadow: 5px 5px 10px rgba(37, 55, 87, 0.5);
+    }
   }
 
   &__icon {
 
     width: 32px;
     height: 32px;
+
+
   }
 }
 

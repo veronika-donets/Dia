@@ -122,15 +122,20 @@ html {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-*:focus {
-  outline: thin dotted #919191;
+a:focus {
+  outline: 0;
+  color: #FCC304;
+}
+
+button:focus {
+  box-shadow: 0px 0px 30px rgba(37, 55, 87, 0.8);
 }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 button:active {
-  outline: thin dotted #919191;
+  outline: 0;
 }
 
 a:active,
@@ -628,6 +633,17 @@ h4::before {
   font-size: 13px;
   font-weight: 800;
   cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.intro__items:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #253757;
+  bottom: -10px;
 }
 .intro__area {
   position: relative;
@@ -779,10 +795,10 @@ h4::before {
   margin-bottom: 128px;
   box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
   background-color: white;
+  transition: transform 1s;
 }
 .process__block_right_item:hover {
   transform: scale(1.2);
-  transition: transform 1s;
 }
 .process__block_right_item:nth-child(odd) {
   top: 128px;
@@ -893,10 +909,10 @@ h4::before {
   width: 314px;
   height: 464px;
   box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
+  transition: transform 1s;
 }
 .testimonials__item:hover {
   transform: scale(1.2);
-  transition: transform 1s;
 }
 .testimonials__item:nth-child(1) .testimonials__position {
   color: #56CCF2;
@@ -1144,6 +1160,9 @@ h4::before {
 .form__input::placeholder {
   color: #253757;
 }
+.form__input:focus {
+  border-bottom: 1px solid #FCC304;
+}
 .form__button {
   margin: 55px 0;
 }
@@ -1174,6 +1193,9 @@ h4::before {
   width: 192px;
   display: flex;
   justify-content: space-between;
+}
+.contacts__items a:focus {
+  box-shadow: 5px 5px 10px rgba(37, 55, 87, 0.5);
 }
 .contacts__icon {
   width: 32px;
@@ -1239,6 +1261,11 @@ h4::before {
     margin: auto;
   }
 
+  .global {
+    color: #253757;
+    z-index: 3;
+  }
+
   .process {
     flex-direction: column;
   }
@@ -1253,6 +1280,9 @@ h4::before {
   .testimonials__block {
     flex-direction: column;
     justify-content: center;
+  }
+  .testimonials__item {
+    margin: auto;
   }
 
   .contacts {
@@ -1302,7 +1332,6 @@ h4::before {
   .global {
     position: absolute;
     top: 300px;
-    color: #253757;
     z-index: 1;
     left: 0;
     right: 0;
@@ -1362,8 +1391,11 @@ h4::before {
     margin: 20px auto;
   }
 
-  .process div {
-    margin: auto;
+  .process div:not(.process__text-heading) {
+    margin: 10px auto;
+  }
+  .process__text-heading {
+    margin: 20px 0 20px;
   }
   .process__block_right {
     position: relative;
@@ -1376,6 +1408,17 @@ h4::before {
 
   .footer__email {
     order: 1;
+  }
+
+  .what-we-do__heading {
+    margin-bottom: 50px;
+  }
+  .what-we-do__item {
+    margin-bottom: 50px;
+  }
+
+  .process {
+    padding-top: 50px;
   }
 }
 
