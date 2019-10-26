@@ -1,0 +1,16 @@
+.welcome-wrapper {
+  max-width: 742px;
+  margin: 165px auto 0;
+  padding-bottom: 165px;
+}
+
+.welcome {
+
+  &__heading {
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    font-weight: 600;
+  }
+}
