@@ -798,7 +798,7 @@ h4::before {
   transition: transform 1s;
 }
 .process__block_right_item:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .process__block_right_item:nth-child(odd) {
   top: 128px;
@@ -912,7 +912,7 @@ h4::before {
   transition: transform 1s;
 }
 .testimonials__item:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .testimonials__item:nth-child(1) .testimonials__position {
   color: #56CCF2;
