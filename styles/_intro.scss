@@ -1,0 +1,113 @@
+.wrapper-intro {
+  max-width: calc(#{$header-img-width} + 164px);
+  margin: auto;
+}
+
+.intro {
+  position: relative;
+  height: $header-img-height;
+  margin-top: -$header-img-height / 2;
+
+  &__links {
+
+    position: absolute;
+    top: 50%;
+    left: 73%;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    transform: rotate(90deg) translate(0, -100%);
+  }
+
+  &__items {
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: $dark-blue;
+      bottom: -10px;
+    }
+  }
+
+  &__area {
+
+    position: relative;
+    overflow: hidden;
+    max-width: $header-img-width;
+    max-height: $header-img-height;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__img {
+
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  &__button {
+
+    &_lr {
+      position: absolute;
+      top: calc(50% - 31px);
+      left: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    &_left {
+      @include button-l-r;
+    }
+
+    &_right {
+      @include button-l-r;
+      transform: rotate(180deg);
+    }
+
+    &_img {
+      background-size: cover;
+      background-position: center;
+      height: 24px;
+      width: 12px;
+    }
+
+  }
+
+  &__section {
+
+    position: absolute;
+    left: 185px;
+    bottom: 85px;
+  }
+
+  &__heading {
+    color: #56CCF2;
+    line-height: 1.5;
+    font-weight: 800;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    color: white;
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 140%;
+  }
+}

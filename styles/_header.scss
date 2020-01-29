@@ -1,0 +1,131 @@
+.header {
+  padding: 48px 0 0;
+  position: relative;
+  height: 850px;
+  width: 100%;
+  background-color: #56CCF2;
+  overflow: hidden;
+
+  &::after {
+    position:absolute;
+    content: "";
+    height: 950px;
+    width: 600px;
+    transform: skew(-30deg);
+    background-color: white;
+    right: -300px;
+    top: 0;
+  }
+}
+
+.menu {
+
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  white-space: nowrap;
+  position: relative;
+  z-index: 2;
+
+  a {
+    font-weight: bold;
+    line-height: 40px;
+  }
+
+  &__logo {
+    font-size: 32px;
+  }
+
+  &__hire {
+    margin-right: 198px;
+    font-size: 16px;
+  }
+
+  &__list {
+    min-width: 480px;
+    max-width: 558px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 0 5px;
+    line-height: 40px;
+    display: inline-block;
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: #FCC304;
+      border-radius: 2px;
+      bottom: 0;
+    }
+  }
+
+  &__item a {
+    position: relative;
+    line-height: 40px;
+  }
+}
+
+
+  .menu__item:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #FCC304;
+    border-radius: 2px;
+    bottom: 0;
+  }
+
+.global {
+
+  &__section {
+
+    max-width: 950px;
+    margin: auto;
+  }
+
+  &__heading {
+
+    margin: 85px 0 0;
+    font-size: 64px;
+    font-weight: 900;
+  }
+
+  &__text {
+    margin: 22px 0 42px;
+    font-size: 24px;
+    line-height: 1.5;
+    max-width: 754px;
+  }
+
+  &__button {
+    background-color: white;
+    border-radius: 64px;
+    border-width: 0;
+    height: 56px;
+    width: 226px;
+    color: #253757;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    &:hover {
+      background-color: $dark-blue;
+      color: white;
+      transition: background-color 1s, color 1s;
+
+    }
+  }
+}

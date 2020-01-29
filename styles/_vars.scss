@@ -1,0 +1,27 @@
+$main-width: 945px;
+$header-img-height: 640px;
+$header-img-width: 1146px;
+
+$blue: #56CCF2;
+$dark-blue: #253757;
+$orange: #FCC304;
+$green: #03D542;
+$red: #F25656;
+$purple: #BC04FC;
+
+@mixin button-l-r {
+  height: 64px;
+  width: 82px;
+  background-color: #FCC304;
+  border-radius: 50px 0 0 50px;
+  max-width: 1050px;
+  position: relative;
+  padding: 0;
+  border-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
